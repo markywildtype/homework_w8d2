@@ -13,9 +13,9 @@ import java.util.ArrayList;
  * Created by user on 23/01/2018.
  */
 
-public class GuitarCollectionAdapter extends ArrayAdapter {
+public class GuitarCollectionAdapter extends ArrayAdapter<Guitar> {
 
-    public GuitarCollectionAdapter(Context context, ArrayList<Guitar> guitarList){
+    public GuitarCollectionAdapter(Context context, ArrayList<Guitar> guitarList ){
         super(context, 0, guitarList);
     }
 
@@ -26,7 +26,7 @@ public class GuitarCollectionAdapter extends ArrayAdapter {
         }
 
         Guitar currentGuitar = getItem(position);
-        
+
         TextView brand = listItemView.findViewById(R.id.brand);
         brand.setText(currentGuitar.getBrand().toString());
 
@@ -35,6 +35,8 @@ public class GuitarCollectionAdapter extends ArrayAdapter {
 
         TextView colour = listItemView.findViewById(R.id.colour);
         colour.setText(currentGuitar.getColour().toString());
+
+        listItemView.setTag(currentGuitar);
 
         return listItemView;
     }

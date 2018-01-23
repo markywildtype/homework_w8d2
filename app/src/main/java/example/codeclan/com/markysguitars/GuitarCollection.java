@@ -26,6 +26,6 @@ public class GuitarCollection {
     }
 
     public ArrayList<Guitar> getCollection() {
-        return new ArrayList<>(guitarCollection);
+        return new ArrayList<Guitar>(guitarCollection);
     }
 }

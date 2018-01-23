@@ -1,10 +1,12 @@
 package example.codeclan.com.markysguitars;
 
+import java.io.Serializable;
+
 /**
  * Created by user on 23/01/2018.
  */
 
-public class Guitar {
+public class Guitar implements Serializable{
 
     private String brand;
     private String model;
