@@ -21,8 +21,8 @@ public class GuitarCollection {
         guitarCollection.add(new Guitar("Epiphone", "Les Paul", "Sunburst"));
         guitarCollection.add(new Guitar("Fender", "Stratocaster", "Cream"));
         guitarCollection.add(new Guitar("OLP", "MusicMan", "Black"));
-        guitarCollection.add(new Guitar("Heritage", "Infinity", "Amber"));
-        guitarCollection.add(new Guitar("Antique", "221", "Black"));
+        guitarCollection.add(new Guitar("Hudson", "Infinity", "Amber"));
+        guitarCollection.add(new Guitar("Baltimore", "221", "Black"));
     }
 
     public ArrayList<Guitar> getCollection() {

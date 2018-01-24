@@ -6,4 +6,11 @@
     android:layout_height="match_parent"
     tools:context="example.codeclan.com.markysguitars.IndividualGuitarActivity">
 
+    <TextView
+        android:id="@+id/individualinfo"
+        android:layout_width="212dp"
+        android:layout_height="286dp"
+        android:text="TextView"
+        tools:layout_editor_absoluteX="86dp"
+        tools:layout_editor_absoluteY="112dp" />
 </android.support.constraint.ConstraintLayout>

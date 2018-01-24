@@ -26,11 +26,6 @@ public class GuitarsActivity extends AppCompatActivity {
     public void onListItemClick(View listItem){
         Guitar guitar = (Guitar) listItem.getTag();
         Log.d("Guitar brand: ", guitar.getBrand());
-    }
-
-    public void getGuitar(View listItem) {
-        Guitar guitar = (Guitar) listItem.getTag();
-        Log.d("Guitar brand: ", guitar.getBrand());
 
         Intent intent = new Intent(this, IndividualGuitarActivity.class);
         intent.putExtra("guitar", guitar);
